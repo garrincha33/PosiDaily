@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		824E4BDF29DDB35800C1AAA8 /* PosiDailyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4BDE29DDB35800C1AAA8 /* PosiDailyApp.swift */; };
-		824E4BE129DDB35800C1AAA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4BE029DDB35800C1AAA8 /* ContentView.swift */; };
 		824E4BE329DDB35A00C1AAA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824E4BE229DDB35A00C1AAA8 /* Assets.xcassets */; };
 		824E4BE629DDB35A00C1AAA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824E4BE529DDB35A00C1AAA8 /* Preview Assets.xcassets */; };
+		824E4BF129DDB3B500C1AAA8 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4BF029DDB3B500C1AAA8 /* Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		824E4BDB29DDB35800C1AAA8 /* PosiDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PosiDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		824E4BDE29DDB35800C1AAA8 /* PosiDailyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosiDailyApp.swift; sourceTree = "<group>"; };
-		824E4BE029DDB35800C1AAA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		824E4BE229DDB35A00C1AAA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		824E4BE529DDB35A00C1AAA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		824E4BF029DDB3B500C1AAA8 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +51,10 @@
 		824E4BDD29DDB35800C1AAA8 /* PosiDaily */ = {
 			isa = PBXGroup;
 			children = (
+				824E4BEF29DDB39E00C1AAA8 /* Main */,
 				824E4BDE29DDB35800C1AAA8 /* PosiDailyApp.swift */,
-				824E4BE029DDB35800C1AAA8 /* ContentView.swift */,
+				824E4BED29DDB38000C1AAA8 /* ViewModels */,
+				824E4BEC29DDB37A00C1AAA8 /* Views */,
 				824E4BE229DDB35A00C1AAA8 /* Assets.xcassets */,
 				824E4BE429DDB35A00C1AAA8 /* Preview Content */,
 			);
@@ -65,6 +67,36 @@
 				824E4BE529DDB35A00C1AAA8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		824E4BEC29DDB37A00C1AAA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		824E4BED29DDB38000C1AAA8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				824E4BEE29DDB39600C1AAA8 /* Services */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		824E4BEE29DDB39600C1AAA8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		824E4BEF29DDB39E00C1AAA8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				824E4BF029DDB3B500C1AAA8 /* Main.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				824E4BE129DDB35800C1AAA8 /* ContentView.swift in Sources */,
+				824E4BF129DDB3B500C1AAA8 /* Main.swift in Sources */,
 				824E4BDF29DDB35800C1AAA8 /* PosiDailyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
