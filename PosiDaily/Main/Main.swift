@@ -8,19 +8,29 @@
 import SwiftUI
 
 struct Main: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, Main!")
+    private var entryStorage = EntryStorage()
+    
+    init(entryStorage: EntryStorage) {
+            self.entryStorage = entryStorage
         }
-        .padding()
+    
+    var body: some View {
+        TabView {
+            EntryFormView(viewModel: EntryFormViewModel(entryStorage: entryStorage))
+                .tabItem {
+                    Label("New Entry", systemImage: "plus")
+                }
+            
+//            EntryHistoryView(viewModel: EntryHistoryViewModel(entryStorage: entryStorage))
+//                .tabItem {
+//                    Label("History", systemImage: "clock")
+//                }
+        }
     }
 }
 
-struct Main_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Main()
+        Main(entryStorage: EntryStorage())
     }
 }

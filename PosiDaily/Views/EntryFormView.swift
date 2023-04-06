@@ -8,31 +8,26 @@
 import SwiftUI
 
 struct EntryFormView: View {
-    @State private var gratitudeText = ""
-    @State private var affirmationText = ""
-    @State private var showAlert = false
     
-    var entryStorage = EntryStorage()
-    
+    @ObservedObject var viewModel: EntryFormViewModel
+
     var body: some View {
         VStack {
             Text("What are you grateful for today?")
-            TextField("Enter your gratitude", text: $gratitudeText)
+            TextField("Enter your gratitude", text: $viewModel.gratitudeText)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
             Text("What's your positive affirmation for today?")
-            TextField("Enter your affirmation", text: $affirmationText)
+            TextField("Enter your affirmation", text: $viewModel.affirmationText)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
             Button("Submit") {
-                let entry = Entry(id: UUID(), date: Date(), gratitude: gratitudeText, affirmation: affirmationText)
-                entryStorage.save(entry: entry)
-                showAlert = true
+                viewModel.submitEntry()
             }
             .padding()
-            .alert(isPresented: $showAlert) {
+            .alert(isPresented: $viewModel.showAlert) {
                 Alert(title: Text("Success!"), message: Text("Your entry has been saved."), dismissButton: .default(Text("OK")))
             }
         }
