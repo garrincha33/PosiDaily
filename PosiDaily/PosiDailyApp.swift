@@ -11,7 +11,7 @@ import SwiftUI
 struct PosiDailyApp: App {
     var body: some Scene {
         WindowGroup {
-            Main()
+            EntryFormView()
         }
     }
 }

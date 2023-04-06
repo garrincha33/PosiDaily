@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "039C8356-B8CF-4770-8F36-4DD905436CCC",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:PosiDaily.xcodeproj",
+      "identifier" : "824E4BDA29DDB35800C1AAA8",
+      "name" : "PosiDaily"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:PosiDaily.xcodeproj",
+        "identifier" : "824E4C0B29DEB74500C1AAA8",
+        "name" : "PosiDailyNewTests"
+      }
+    }
+  ],
+  "version" : 1
+}
