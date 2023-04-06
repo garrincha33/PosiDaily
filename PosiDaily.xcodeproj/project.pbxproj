@@ -11,7 +11,28 @@
 		824E4BE329DDB35A00C1AAA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824E4BE229DDB35A00C1AAA8 /* Assets.xcassets */; };
 		824E4BE629DDB35A00C1AAA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824E4BE529DDB35A00C1AAA8 /* Preview Assets.xcassets */; };
 		824E4BF129DDB3B500C1AAA8 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4BF029DDB3B500C1AAA8 /* Main.swift */; };
+		824E4BF429DEAF4700C1AAA8 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4BF329DEAF4700C1AAA8 /* Entry.swift */; };
+		824E4C0529DEB25F00C1AAA8 /* EntryFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4C0429DEB25F00C1AAA8 /* EntryFormView.swift */; };
+		824E4C0729DEB29D00C1AAA8 /* EntryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4C0629DEB29D00C1AAA8 /* EntryStorage.swift */; };
+		824E4C0F29DEB74500C1AAA8 /* PosiDailyNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4C0E29DEB74500C1AAA8 /* PosiDailyNewTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		824E4BFD29DEAF8300C1AAA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 824E4BD329DDB35800C1AAA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 824E4BDA29DDB35800C1AAA8;
+			remoteInfo = PosiDaily;
+		};
+		824E4C1029DEB74500C1AAA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 824E4BD329DDB35800C1AAA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 824E4BDA29DDB35800C1AAA8;
+			remoteInfo = PosiDaily;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		824E4BDB29DDB35800C1AAA8 /* PosiDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PosiDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +40,31 @@
 		824E4BE229DDB35A00C1AAA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		824E4BE529DDB35A00C1AAA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		824E4BF029DDB3B500C1AAA8 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		824E4BF329DEAF4700C1AAA8 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		824E4BF929DEAF8300C1AAA8 /* PosiDailyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PosiDailyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		824E4C0429DEB25F00C1AAA8 /* EntryFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryFormView.swift; sourceTree = "<group>"; };
+		824E4C0629DEB29D00C1AAA8 /* EntryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryStorage.swift; sourceTree = "<group>"; };
+		824E4C0C29DEB74500C1AAA8 /* PosiDailyNewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PosiDailyNewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		824E4C0E29DEB74500C1AAA8 /* PosiDailyNewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosiDailyNewTests.swift; sourceTree = "<group>"; };
+		824E4C3E29DEB9C200C1AAA8 /* PosiDaily.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = PosiDaily.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		824E4BD829DDB35800C1AAA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		824E4BF629DEAF8300C1AAA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		824E4C0929DEB74500C1AAA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,7 +77,9 @@
 		824E4BD229DDB35800C1AAA8 = {
 			isa = PBXGroup;
 			children = (
+				824E4C3E29DEB9C200C1AAA8 /* PosiDaily.xctestplan */,
 				824E4BDD29DDB35800C1AAA8 /* PosiDaily */,
+				824E4C0D29DEB74500C1AAA8 /* PosiDailyNewTests */,
 				824E4BDC29DDB35800C1AAA8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				824E4BDB29DDB35800C1AAA8 /* PosiDaily.app */,
+				824E4BF929DEAF8300C1AAA8 /* PosiDailyTests.xctest */,
+				824E4C0C29DEB74500C1AAA8 /* PosiDailyNewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +97,7 @@
 		824E4BDD29DDB35800C1AAA8 /* PosiDaily */ = {
 			isa = PBXGroup;
 			children = (
+				824E4BF229DEAAF300C1AAA8 /* Models */,
 				824E4BEF29DDB39E00C1AAA8 /* Main */,
 				824E4BDE29DDB35800C1AAA8 /* PosiDailyApp.swift */,
 				824E4BED29DDB38000C1AAA8 /* ViewModels */,
@@ -72,6 +119,7 @@
 		824E4BEC29DDB37A00C1AAA8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				824E4C0429DEB25F00C1AAA8 /* EntryFormView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,6 +135,7 @@
 		824E4BEE29DDB39600C1AAA8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				824E4C0629DEB29D00C1AAA8 /* EntryStorage.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -97,6 +146,22 @@
 				824E4BF029DDB3B500C1AAA8 /* Main.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		824E4BF229DEAAF300C1AAA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				824E4BF329DEAF4700C1AAA8 /* Entry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		824E4C0D29DEB74500C1AAA8 /* PosiDailyNewTests */ = {
+			isa = PBXGroup;
+			children = (
+				824E4C0E29DEB74500C1AAA8 /* PosiDailyNewTests.swift */,
+			);
+			path = PosiDailyNewTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +184,42 @@
 			productReference = 824E4BDB29DDB35800C1AAA8 /* PosiDaily.app */;
 			productType = "com.apple.product-type.application";
 		};
+		824E4BF829DEAF8300C1AAA8 /* PosiDailyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 824E4BFF29DEAF8300C1AAA8 /* Build configuration list for PBXNativeTarget "PosiDailyTests" */;
+			buildPhases = (
+				824E4BF529DEAF8300C1AAA8 /* Sources */,
+				824E4BF629DEAF8300C1AAA8 /* Frameworks */,
+				824E4BF729DEAF8300C1AAA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				824E4BFE29DEAF8300C1AAA8 /* PBXTargetDependency */,
+			);
+			name = PosiDailyTests;
+			productName = PosiDailyTests;
+			productReference = 824E4BF929DEAF8300C1AAA8 /* PosiDailyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		824E4C0B29DEB74500C1AAA8 /* PosiDailyNewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 824E4C1229DEB74500C1AAA8 /* Build configuration list for PBXNativeTarget "PosiDailyNewTests" */;
+			buildPhases = (
+				824E4C0829DEB74500C1AAA8 /* Sources */,
+				824E4C0929DEB74500C1AAA8 /* Frameworks */,
+				824E4C0A29DEB74500C1AAA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				824E4C1129DEB74500C1AAA8 /* PBXTargetDependency */,
+			);
+			name = PosiDailyNewTests;
+			productName = PosiDailyNewTests;
+			productReference = 824E4C0C29DEB74500C1AAA8 /* PosiDailyNewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -131,6 +232,14 @@
 				TargetAttributes = {
 					824E4BDA29DDB35800C1AAA8 = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					824E4BF829DEAF8300C1AAA8 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 824E4BDA29DDB35800C1AAA8;
+					};
+					824E4C0B29DEB74500C1AAA8 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 824E4BDA29DDB35800C1AAA8;
 					};
 				};
 			};
@@ -148,6 +257,8 @@
 			projectRoot = "";
 			targets = (
 				824E4BDA29DDB35800C1AAA8 /* PosiDaily */,
+				824E4BF829DEAF8300C1AAA8 /* PosiDailyTests */,
+				824E4C0B29DEB74500C1AAA8 /* PosiDailyNewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -162,6 +273,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		824E4BF729DEAF8300C1AAA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		824E4C0A29DEB74500C1AAA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -169,12 +294,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				824E4BF429DEAF4700C1AAA8 /* Entry.swift in Sources */,
 				824E4BF129DDB3B500C1AAA8 /* Main.swift in Sources */,
 				824E4BDF29DDB35800C1AAA8 /* PosiDailyApp.swift in Sources */,
+				824E4C0729DEB29D00C1AAA8 /* EntryStorage.swift in Sources */,
+				824E4C0529DEB25F00C1AAA8 /* EntryFormView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		824E4BF529DEAF8300C1AAA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		824E4C0829DEB74500C1AAA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				824E4C0F29DEB74500C1AAA8 /* PosiDailyNewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		824E4BFE29DEAF8300C1AAA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 824E4BDA29DDB35800C1AAA8 /* PosiDaily */;
+			targetProxy = 824E4BFD29DEAF8300C1AAA8 /* PBXContainerItemProxy */;
+		};
+		824E4C1129DEB74500C1AAA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 824E4BDA29DDB35800C1AAA8 /* PosiDaily */;
+			targetProxy = 824E4C1029DEB74500C1AAA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		824E4BE729DDB35A00C1AAA8 /* Debug */ = {
@@ -349,6 +505,78 @@
 			};
 			name = Release;
 		};
+		824E4C0029DEAF8300C1AAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMQAGMF379;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IssapTechnologies.PosiDailyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PosiDaily.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PosiDaily";
+			};
+			name = Debug;
+		};
+		824E4C0129DEAF8300C1AAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMQAGMF379;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IssapTechnologies.PosiDailyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PosiDaily.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PosiDaily";
+			};
+			name = Release;
+		};
+		824E4C1329DEB74500C1AAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMQAGMF379;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IssapTechnologies.PosiDailyNewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PosiDaily.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PosiDaily";
+			};
+			name = Debug;
+		};
+		824E4C1429DEB74500C1AAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMQAGMF379;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IssapTechnologies.PosiDailyNewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PosiDaily.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PosiDaily";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -366,6 +594,24 @@
 			buildConfigurations = (
 				824E4BEA29DDB35A00C1AAA8 /* Debug */,
 				824E4BEB29DDB35A00C1AAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		824E4BFF29DEAF8300C1AAA8 /* Build configuration list for PBXNativeTarget "PosiDailyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824E4C0029DEAF8300C1AAA8 /* Debug */,
+				824E4C0129DEAF8300C1AAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		824E4C1229DEB74500C1AAA8 /* Build configuration list for PBXNativeTarget "PosiDailyNewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824E4C1329DEB74500C1AAA8 /* Debug */,
+				824E4C1429DEB74500C1AAA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
