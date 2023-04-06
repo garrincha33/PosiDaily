@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct PosiDailyApp: App {
+    private let entryStorage = EntryStorage()
+    
     var body: some Scene {
         WindowGroup {
-            EntryFormView()
+            Main(entryStorage: entryStorage)
         }
     }
 }
+

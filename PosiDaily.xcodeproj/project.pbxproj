@@ -15,6 +15,9 @@
 		824E4C0529DEB25F00C1AAA8 /* EntryFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4C0429DEB25F00C1AAA8 /* EntryFormView.swift */; };
 		824E4C0729DEB29D00C1AAA8 /* EntryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4C0629DEB29D00C1AAA8 /* EntryStorage.swift */; };
 		824E4C0F29DEB74500C1AAA8 /* PosiDailyNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4C0E29DEB74500C1AAA8 /* PosiDailyNewTests.swift */; };
+		824E4C4029DEF76500C1AAA8 /* EntryFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4C3F29DEF76400C1AAA8 /* EntryFormViewModel.swift */; };
+		824E4C4229DEF79E00C1AAA8 /* EntryStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4C4129DEF79E00C1AAA8 /* EntryStorageTests.swift */; };
+		824E4C4429DEF7F900C1AAA8 /* EntryFormViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4C4329DEF7F900C1AAA8 /* EntryFormViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		824E4C0C29DEB74500C1AAA8 /* PosiDailyNewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PosiDailyNewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		824E4C0E29DEB74500C1AAA8 /* PosiDailyNewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosiDailyNewTests.swift; sourceTree = "<group>"; };
 		824E4C3E29DEB9C200C1AAA8 /* PosiDaily.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = PosiDaily.xctestplan; sourceTree = "<group>"; };
+		824E4C3F29DEF76400C1AAA8 /* EntryFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryFormViewModel.swift; sourceTree = "<group>"; };
+		824E4C4129DEF79E00C1AAA8 /* EntryStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryStorageTests.swift; sourceTree = "<group>"; };
+		824E4C4329DEF7F900C1AAA8 /* EntryFormViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryFormViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,7 @@
 		824E4BED29DDB38000C1AAA8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				824E4C3F29DEF76400C1AAA8 /* EntryFormViewModel.swift */,
 				824E4BEE29DDB39600C1AAA8 /* Services */,
 			);
 			path = ViewModels;
@@ -160,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				824E4C0E29DEB74500C1AAA8 /* PosiDailyNewTests.swift */,
+				824E4C4129DEF79E00C1AAA8 /* EntryStorageTests.swift */,
+				824E4C4329DEF7F900C1AAA8 /* EntryFormViewModelTests.swift */,
 			);
 			path = PosiDailyNewTests;
 			sourceTree = "<group>";
@@ -295,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				824E4BF429DEAF4700C1AAA8 /* Entry.swift in Sources */,
+				824E4C4029DEF76500C1AAA8 /* EntryFormViewModel.swift in Sources */,
 				824E4BF129DDB3B500C1AAA8 /* Main.swift in Sources */,
 				824E4BDF29DDB35800C1AAA8 /* PosiDailyApp.swift in Sources */,
 				824E4C0729DEB29D00C1AAA8 /* EntryStorage.swift in Sources */,
@@ -313,6 +323,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				824E4C4429DEF7F900C1AAA8 /* EntryFormViewModelTests.swift in Sources */,
+				824E4C4229DEF79E00C1AAA8 /* EntryStorageTests.swift in Sources */,
 				824E4C0F29DEB74500C1AAA8 /* PosiDailyNewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
