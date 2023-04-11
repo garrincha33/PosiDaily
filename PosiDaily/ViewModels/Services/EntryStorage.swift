@@ -7,7 +7,7 @@
 
 import Foundation
 
-class EntryStorage {
+struct EntryStorage {
     private let userDefaults = UserDefaults.standard
     private let storageKey = "entries"
     
