@@ -34,4 +34,3 @@ struct EntryFormView: View {
         .padding()
     }
 }
-

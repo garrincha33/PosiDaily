@@ -21,10 +21,10 @@ struct Main: View {
                     Label("New Entry", systemImage: "plus")
                 }
             
-//            EntryHistoryView(viewModel: EntryHistoryViewModel(entryStorage: entryStorage))
-//                .tabItem {
-//                    Label("History", systemImage: "clock")
-//                }
+            EntryHistoryView(viewModel: EntryHistoryViewModel(entryStorage: entryStorage))
+                .tabItem {
+                    Label("History", systemImage: "clock")
+                }
         }
     }
 }

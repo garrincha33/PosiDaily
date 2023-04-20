@@ -32,8 +32,6 @@ class EntryFormViewModelTests: XCTestCase {
         entryFormViewModel.affirmationText = affirmationText
         return entryFormViewModel
     }
-
-
     
     func testSubmitEntry() {
         let viewModel = makeViewModel(gratitudeText: "I am grateful for my friends", affirmationText: "I am focused and productive")
@@ -50,8 +48,9 @@ class EntryFormViewModelTests: XCTestCase {
         XCTAssertEqual(savedEntries.first?.affirmation, originalAffirmationText)
         XCTAssertTrue(viewModel.showAlert)
     }
-
 }
+
+
 
 
 
