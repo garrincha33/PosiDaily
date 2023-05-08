@@ -16,6 +16,7 @@
 		823DC06F2A08E4AE0018C5CD /* AchievementStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DC06E2A08E4AE0018C5CD /* AchievementStorageTests.swift */; };
 		823DC0712A08E5590018C5CD /* AchievementsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DC0702A08E5590018C5CD /* AchievementsStorage.swift */; };
 		823DC0732A08EA060018C5CD /* AchievementsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DC0722A08EA060018C5CD /* AchievementsViewModel.swift */; };
+		823DC0752A08EB910018C5CD /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DC0742A08EB910018C5CD /* AchievementsView.swift */; };
 		824E4BDF29DDB35800C1AAA8 /* PosiDailyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4BDE29DDB35800C1AAA8 /* PosiDailyApp.swift */; };
 		824E4BE329DDB35A00C1AAA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824E4BE229DDB35A00C1AAA8 /* Assets.xcassets */; };
 		824E4BE629DDB35A00C1AAA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824E4BE529DDB35A00C1AAA8 /* Preview Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		823DC06E2A08E4AE0018C5CD /* AchievementStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementStorageTests.swift; sourceTree = "<group>"; };
 		823DC0702A08E5590018C5CD /* AchievementsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsStorage.swift; sourceTree = "<group>"; };
 		823DC0722A08EA060018C5CD /* AchievementsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewModel.swift; sourceTree = "<group>"; };
+		823DC0742A08EB910018C5CD /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
 		824E4BDB29DDB35800C1AAA8 /* PosiDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PosiDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		824E4BDE29DDB35800C1AAA8 /* PosiDailyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosiDailyApp.swift; sourceTree = "<group>"; };
 		824E4BE229DDB35A00C1AAA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				824E4C0429DEB25F00C1AAA8 /* EntryFormView.swift */,
 				823DC06529F144590018C5CD /* EntryHistoryView.swift */,
 				823DC06729F144850018C5CD /* EntryDetailView.swift */,
+				823DC0742A08EB910018C5CD /* AchievementsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				824E4BDF29DDB35800C1AAA8 /* PosiDailyApp.swift in Sources */,
 				824E4C0729DEB29D00C1AAA8 /* EntryStorage.swift in Sources */,
 				823DC06829F144850018C5CD /* EntryDetailView.swift in Sources */,
+				823DC0752A08EB910018C5CD /* AchievementsView.swift in Sources */,
 				824E4C0529DEB25F00C1AAA8 /* EntryFormView.swift in Sources */,
 				823DC06429F144070018C5CD /* EntryHistoryViewModel.swift in Sources */,
 				823DC06D29F83D110018C5CD /* Achievement.swift in Sources */,
