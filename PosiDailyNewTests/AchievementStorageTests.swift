@@ -9,6 +9,7 @@ import XCTest
 @testable import PosiDaily
 
 class AchievementsStorageTests: XCTestCase {
+    var achievementsViewModel: AchievementsViewModel!
     var achievementsStorage: AchievementsStorage!
     
     override func setUp() {
@@ -16,9 +17,11 @@ class AchievementsStorageTests: XCTestCase {
         UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
         UserDefaults.standard.synchronize()
         achievementsStorage = AchievementsStorage()
+        achievementsViewModel = AchievementsViewModel(achievementsStorage: achievementsStorage)
     }
     
     override func tearDown() {
+        achievementsViewModel = nil
         achievementsStorage = nil
         super.tearDown()
     }
