@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Achievement {
+struct Achievement: Codable, Identifiable, Equatable {
     let id: UUID
     let title: String
     let description: String

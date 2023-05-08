@@ -13,11 +13,11 @@ class EntryFormViewModel: ObservableObject {
     @Published var showAlert: Bool = false
     
     let entryStorage: EntryStorage
-    
+
     init(entryStorage: EntryStorage) {
         self.entryStorage = entryStorage
     }
-    
+
     func submitEntry() {
         let entry = Entry(id: UUID(), date: Date(), gratitude: gratitudeText, affirmation: affirmationText)
         entryStorage.save(entry: entry)
