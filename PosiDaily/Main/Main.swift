@@ -25,6 +25,12 @@ struct Main: View {
                 .tabItem {
                     Label("History", systemImage: "clock")
                 }
+            
+            AchievementsView(viewModel: AchievementsViewModel(achievementsStorage: AchievementsStorage()))
+                          .tabItem {
+                              Image(systemName: "star.fill")
+                              Text("Achievements")
+                          }
         }
     }
 }
