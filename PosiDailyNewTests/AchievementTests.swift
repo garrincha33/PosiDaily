@@ -10,7 +10,7 @@ import XCTest
 
 class AchievementTests: XCTestCase {
     func testAchievementInitialization() {
-        let achievement = Achievement(id: UUID(), title: "Test Achievement", description: "This is a test achievement", isUnlocked: false)
+        let achievement = Achievement(id: UUID(), title: "Test Achievement", type: AchievementType.firstAffirmation, description: "This is a test achievement", isUnlocked: false)
         
         XCTAssertEqual(achievement.title, "Test Achievement")
         XCTAssertEqual(achievement.description, "This is a test achievement")

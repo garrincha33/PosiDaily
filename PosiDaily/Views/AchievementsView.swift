@@ -44,7 +44,7 @@ struct AchievementsView: View {
 
 struct AchievementsView_Previews: PreviewProvider {
     static var previews: some View {
-        AchievementsView(viewModel: AchievementsViewModel(achievementsStorage: AchievementsStorage()))
+        AchievementsView(viewModel: AchievementsViewModel(achievementsStorage: AchievementsStorage(), userActionsHistory: UserActionsHistory()))
     }
 }
 

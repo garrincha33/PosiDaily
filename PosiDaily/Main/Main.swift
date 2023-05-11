@@ -26,7 +26,7 @@ struct Main: View {
                     Label("History", systemImage: "clock")
                 }
             
-            AchievementsView(viewModel: AchievementsViewModel(achievementsStorage: AchievementsStorage()))
+            AchievementsView(viewModel: AchievementsViewModel(achievementsStorage: AchievementsStorage(), userActionsHistory: UserActionsHistory()))
                           .tabItem {
                               Image(systemName: "star.fill")
                               Text("Achievements")
