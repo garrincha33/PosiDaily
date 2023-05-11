@@ -18,6 +18,8 @@
 		823DC0732A08EA060018C5CD /* AchievementsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DC0722A08EA060018C5CD /* AchievementsViewModel.swift */; };
 		823DC0752A08EB910018C5CD /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DC0742A08EB910018C5CD /* AchievementsView.swift */; };
 		823DC0772A091E320018C5CD /* UserActionsHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DC0762A091E320018C5CD /* UserActionsHistoryTests.swift */; };
+		823DC07A2A09213F0018C5CD /* UserActionsHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DC0792A09213F0018C5CD /* UserActionsHistory.swift */; };
+		823DC07C2A09219D0018C5CD /* AchievementsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DC07B2A09219D0018C5CD /* AchievementsViewModelTests.swift */; };
 		824E4BDF29DDB35800C1AAA8 /* PosiDailyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E4BDE29DDB35800C1AAA8 /* PosiDailyApp.swift */; };
 		824E4BE329DDB35A00C1AAA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824E4BE229DDB35A00C1AAA8 /* Assets.xcassets */; };
 		824E4BE629DDB35A00C1AAA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824E4BE529DDB35A00C1AAA8 /* Preview Assets.xcassets */; };
@@ -60,6 +62,8 @@
 		823DC0722A08EA060018C5CD /* AchievementsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewModel.swift; sourceTree = "<group>"; };
 		823DC0742A08EB910018C5CD /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
 		823DC0762A091E320018C5CD /* UserActionsHistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionsHistoryTests.swift; sourceTree = "<group>"; };
+		823DC0792A09213F0018C5CD /* UserActionsHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionsHistory.swift; sourceTree = "<group>"; };
+		823DC07B2A09219D0018C5CD /* AchievementsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewModelTests.swift; sourceTree = "<group>"; };
 		824E4BDB29DDB35800C1AAA8 /* PosiDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PosiDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		824E4BDE29DDB35800C1AAA8 /* PosiDailyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosiDailyApp.swift; sourceTree = "<group>"; };
 		824E4BE229DDB35A00C1AAA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		823DC0782A0921280018C5CD /* History */ = {
+			isa = PBXGroup;
+			children = (
+				823DC0792A09213F0018C5CD /* UserActionsHistory.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
 		824E4BD229DDB35800C1AAA8 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +141,7 @@
 				824E4BEF29DDB39E00C1AAA8 /* Main */,
 				824E4BDE29DDB35800C1AAA8 /* PosiDailyApp.swift */,
 				824E4BED29DDB38000C1AAA8 /* ViewModels */,
+				823DC0782A0921280018C5CD /* History */,
 				824E4BEC29DDB37A00C1AAA8 /* Views */,
 				824E4BE229DDB35A00C1AAA8 /* Assets.xcassets */,
 				824E4BE429DDB35A00C1AAA8 /* Preview Content */,
@@ -202,6 +215,7 @@
 				823DC06129F143070018C5CD /* EntryHistoryViewModelTests.swift */,
 				823DC06E2A08E4AE0018C5CD /* AchievementStorageTests.swift */,
 				823DC0762A091E320018C5CD /* UserActionsHistoryTests.swift */,
+				823DC07B2A09219D0018C5CD /* AchievementsViewModelTests.swift */,
 			);
 			path = PosiDailyNewTests;
 			sourceTree = "<group>";
@@ -347,6 +361,7 @@
 				823DC06829F144850018C5CD /* EntryDetailView.swift in Sources */,
 				823DC0752A08EB910018C5CD /* AchievementsView.swift in Sources */,
 				824E4C0529DEB25F00C1AAA8 /* EntryFormView.swift in Sources */,
+				823DC07A2A09213F0018C5CD /* UserActionsHistory.swift in Sources */,
 				823DC06429F144070018C5CD /* EntryHistoryViewModel.swift in Sources */,
 				823DC06D29F83D110018C5CD /* Achievement.swift in Sources */,
 			);
@@ -367,6 +382,7 @@
 				823DC06B29F83CEF0018C5CD /* AchievementTests.swift in Sources */,
 				824E4C4429DEF7F900C1AAA8 /* EntryFormViewModelTests.swift in Sources */,
 				823DC06F2A08E4AE0018C5CD /* AchievementStorageTests.swift in Sources */,
+				823DC07C2A09219D0018C5CD /* AchievementsViewModelTests.swift in Sources */,
 				824E4C4229DEF79E00C1AAA8 /* EntryStorageTests.swift in Sources */,
 				824E4C0F29DEB74500C1AAA8 /* PosiDailyNewTests.swift in Sources */,
 				823DC0772A091E320018C5CD /* UserActionsHistoryTests.swift in Sources */,

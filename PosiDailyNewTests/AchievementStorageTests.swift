@@ -17,7 +17,7 @@ class AchievementsStorageTests: XCTestCase {
         UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
         UserDefaults.standard.synchronize()
         achievementsStorage = AchievementsStorage()
-        achievementsViewModel = AchievementsViewModel(achievementsStorage: achievementsStorage)
+        achievementsViewModel = AchievementsViewModel(achievementsStorage: achievementsStorage, userActionsHistory: UserActionsHistory())
     }
     
     override func tearDown() {
@@ -27,7 +27,7 @@ class AchievementsStorageTests: XCTestCase {
     }
     
     func testSaveAndLoadAchievements() {
-        let achievement = Achievement(id: UUID(), title: "Test Achievement", description: "This is a test achievement", isUnlocked: false)
+        let achievement = Achievement(id: UUID(), title: "Test Achievement", type: AchievementType.firstAffirmation, description: "This is a test achievement", isUnlocked: false)
         
         achievementsStorage.save(achievement: achievement)
         let loadedAchievements = achievementsStorage.loadAll()
@@ -37,10 +37,10 @@ class AchievementsStorageTests: XCTestCase {
     }
     
     func testUpdateAchievement() {
-        let achievement = Achievement(id: UUID(), title: "Test Achievement", description: "This is a test achievement", isUnlocked: false)
+        let achievement = Achievement(id: UUID(), title: "Test Achievement", type: AchievementType.firstAffirmation, description: "This is a test achievement", isUnlocked: false)
         achievementsStorage.save(achievement: achievement)
         
-        let updatedAchievement = Achievement(id: achievement.id, title: achievement.title, description: achievement.description, isUnlocked: true)
+        let updatedAchievement = Achievement(id: achievement.id, title: achievement.title, type: AchievementType.firstAffirmation, description: achievement.description, isUnlocked: true)
         achievementsStorage.update(achievement: updatedAchievement)
         
         let loadedAchievements = achievementsStorage.loadAll()
