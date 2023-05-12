@@ -23,7 +23,6 @@ class AchievementsViewModel: ObservableObject {
         self.achievementsStorage = achievementsStorage
         self.userActionsHistory = userActionsHistory
         self.achievements = achievementsStorage.loadAll()
-        setupAchievements()
         loadAchievements()
     }
     

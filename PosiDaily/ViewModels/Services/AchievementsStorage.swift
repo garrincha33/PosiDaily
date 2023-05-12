@@ -32,6 +32,10 @@ struct AchievementsStorage {
             saveAll(achievements: achievements)
         }
     }
+    
+    func reset() {
+           UserDefaults.standard.removeObject(forKey: achievementsKey)
+       }
 
     private func saveAll(achievements: [Achievement]) {
         if let data = try? JSONEncoder().encode(achievements) {
