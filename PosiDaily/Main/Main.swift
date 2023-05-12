@@ -26,11 +26,13 @@ struct Main: View {
                     Label("History", systemImage: "clock")
                 }
             
-            AchievementsView(viewModel: AchievementsViewModel(achievementsStorage: AchievementsStorage(), userActionsHistory: UserActionsHistory()))
-                          .tabItem {
-                              Image(systemName: "star.fill")
-                              Text("Achievements")
-                          }
+            let achievementsStorage = AchievementsStorage()
+                        let userActionsHistory = UserActionsHistory()
+                        let viewModel = AchievementsViewModel(achievementsStorage: achievementsStorage, userActionsHistory: userActionsHistory)
+                        AchievementsListView(viewModel: viewModel)
+                            .tabItem {
+                                Label("Achievements", systemImage: "star")
+                            }
         }
     }
 }

@@ -21,7 +21,7 @@ class AchievementsViewModelTests: XCTestCase {
         achievementsStorage.save(achievement: sevenDaysAchievement)
         
         let achievementsViewModel = AchievementsViewModel(achievementsStorage: achievementsStorage, userActionsHistory: userActionsHistory)
-
+    
         achievementsViewModel.checkForAchievementsUnlock(userAction: .submittedAffirmation)
         let firstAchievementUnlocked = achievementsViewModel.achievements.first(where: { $0.type == .firstAffirmation })
         XCTAssertTrue(firstAchievementUnlocked?.isUnlocked == true)
